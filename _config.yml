@@ -7,6 +7,10 @@ exclude:
   - vendors/cache/
   - vendors/gems/
   - vendors/ruby/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 permalink: pretty
 markdown: kramdown
 prose:
