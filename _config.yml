@@ -1,4 +1,12 @@
 baseurl: /starter
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node-modules
+  - vendors/bundle/
+  - vendors/cache/
+  - vendors/gems/
+  - vendors/ruby/
 permalink: pretty
 markdown: kramdown
 prose:
