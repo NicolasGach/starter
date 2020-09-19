@@ -1,4 +1,3 @@
-baseurl: /starter
 exclude:
   - Gemfile
   - Gemfile.lock
