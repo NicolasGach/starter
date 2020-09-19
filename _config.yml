@@ -12,8 +12,12 @@ exclude:
   - vendor/ruby/
 permalink: pretty
 markdown: kramdown
+collections_dir: docs
+collections:
+  sf-pu-core-worldline:
+    output: true
 prose:
-  rooturl: '_posts'
+  rooturl: 'docs'
   siteurl: 'https://gsmidocs.herokuapp.com/'
   relativeLinks: 'https://gsmidocs.herokuapp.com/links.jsonp'
   media: 'media'
