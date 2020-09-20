@@ -16,6 +16,10 @@ collections_dir: docs
 collections:
   sf-pu-core-worldline:
     output: true
+    codeversions: 
+      - 'v1.0.1'
+      - 'v1.0.2'
+    currentversion: 'v1.0.1'
 prose:
   rooturl: 'docs'
   siteurl: 'https://gsmidocs.herokuapp.com/'

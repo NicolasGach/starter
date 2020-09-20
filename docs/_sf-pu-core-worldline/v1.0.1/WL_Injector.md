@@ -1,3 +1,8 @@
+---
+layout: documentation
+codeversion: v1.0.1
+---
+
 ## Usage
 
 Simple dependency injector used in Worldline Core Technical framework.

@@ -1,3 +1,8 @@
+---
+layout: documentation
+codeversion: v1.0.1
+---
+
 ## Usage
 
 Wrapper for HttpRequest. Requests can be cached, in which case the result of the previous call will be returned when the endpoint is called again, without the request being passed as a callout. WL_HttpRequest can be handled as Sets.

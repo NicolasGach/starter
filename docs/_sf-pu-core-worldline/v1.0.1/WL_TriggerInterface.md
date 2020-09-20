@@ -1,3 +1,8 @@
+---
+layout: documentation
+codeversion: v1.0.1
+---
+
 ## Usage
 
 Interface implemented by trigger handlers instantiated by the [[WL_TriggerFactory]] class.

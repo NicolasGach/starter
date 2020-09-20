@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<div class="col12 clearfix">
+    <div class="col2 margin1">
+    {% assign thisCollection = site.collections | where: "label", page.collection | first %}
+    <p>Packages</p>
+    <select onchange="window.location=this.options[this.selectedIndex].value">
+        <option value="{{ thisCollection.url }}">{{ thisCollection.label }}</option>
+        {% for coll in site.collections %}
+            {% if coll.label != thisCollection.label and coll.label != "posts" %}
+                <option value="{{ coll.url }}">{{ coll.label }}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+    <p>Package versions</p>
+    <select onchange="window.location=this.options[this.selectedIndex].value">
+        <option value="">{{page.codeversion}}</option>
+        {% for doc in site.documents %}
+        {% for version in thisCollection.codeversions %}
+            {% assign vURL = page.url | replace: page.codeversion, version %}
+            {% if doc.url == vURL and version != page.codeversion %}
+            <option value="{{ doc.url }}">{{version}}</option>
+            {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </select>
+    <p>Package Components</p>
+    {% assign componentTypes = thisCollection.docs | map: "componentType" | uniq %}
+    {% for componentType in componentTypes %}
+        {% assign componentColl = thisCollection.docs | where: "componentType", componentType %}
+        {% if componentType %}
+            <ul>{{componentType}} :
+        {% else %}
+            <ul>Type Unknown :
+        {% endif %}
+        {% for doc in componentColl %}
+            {% assign testURL = doc.url | remove: page.codeversion %}
+            {% assign docUrlSize = doc.url | size %}
+            {% assign testUrlSize = testURL | size %}
+            {% unless docUrlSize <= testUrlSize or doc.url contains "index" %} 
+            <li><a href="{{ doc.url }}">{{doc.title}}</a></li>
+            {% endunless %}
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    </div>
+    <div class="col7 margin1">
+        <div class="prose">
+        {{content | markdownify}}
+        </div>
+    </div>
+</div>

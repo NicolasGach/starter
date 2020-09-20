@@ -1,3 +1,8 @@
+---
+layout: documentation
+codeversion: v1.0.1
+---
+
 ## Usage
 
 Controller class used to pilot transactions with the database in the Worldline Core Technical framework.

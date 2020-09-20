@@ -1,3 +1,8 @@
+---
+layout: documentation
+codeversion: v1.0.1
+---
+
 ## Usage
 
 Handler for [[WL_HttpRequest]] objects. Is called internally by other classes to pass the requests.

@@ -1,17 +1,13 @@
 ---
 layout: documentation
-codeversion: v1.0.1
-componentType: ApexClass
-title: IWL_Controller
+codeversion: v1.0.2
 ---
 
-# <span>{{page.title}}</span>
-
-## <span>Usage</span>
+## Usage in V1.0.2
 
 Interface for the controller in the Worldline Core Technical framework. Classes implementing it satisfy the requirements to be used as WCT controllers.  
 
-## <span>Methods</span>
+## Methods
 
 * **deliver()**  
 This method should combine the building of database commits and their execution. It ought as well to trigger callbacks related to said execution in the object subscribed to the controller, by indicating the "done" status of orders when their handling is done.

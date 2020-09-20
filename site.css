@@ -64,16 +64,25 @@ h6 {
   }
 
 h1 {
-  font-size:42px;
-  margin-bottom:10px;
-  line-height:1em;
+  font-size:28px;
+  margin-bottom:20px;
   }
+
+h1 span {
+  background-color: #3C3C3C;
+  color : #FFF;
+  padding: 4px 8px 4px 8px;
+}
+h2 span {
+  background-color: #41B4D2;
+  color: #FFF;
+  padding: 4px 8px 4px 8px;
+}
 
 h2 {
   font-size:28px;
   margin-bottom:20px;
-  line-height:1.25em;
-  }
+}
 
 h3 {
   font-size:20px;
@@ -94,7 +103,7 @@ p {
 
 /* Links */
 a {
-  color:#2099aa;
+  color:#5F8CA0;
   text-decoration:none;
   font-weight:bold;
   -webkit-transition:color 100ms;
@@ -103,10 +112,10 @@ a {
           transition:color 100ms;
   }
   a:hover {
-    color:#197987;
+    color:#3F5C69;
     }
   a.active {
-    color:#516066;
+    color:#D74B8C;
     }
   .rss {
     color:#d4d7d9;
@@ -322,15 +331,15 @@ table {
 .header {
   padding:20px 0;
   }
-  .header .title {
-    font-size:15px;
-    line-height:1.67;
-    font-weight:bold;
-    margin:0;
-    }
-    .header .title a {
-      color:#516066;
-      }
+.header .title {
+  font-size:15px;
+  line-height:1.67;
+  font-weight:bold;
+  margin:0;
+}
+.header .title a {
+  color:#516066;
+}
 
 .menu {
   text-align:right;

@@ -5,14 +5,17 @@ section: blog
 
 <div class='listing col6 pad4h margin3'>
   {% for collection in site.collections %}
-  {% if collection.label != 'post' %}
-    <p>{{collection.label}}</p>
-    {% assign name = collection.label %}
-    {% for page in site[collection] %}
-    <article>
-      <h2>{{ page.title }}</h2>
-    </article>
-    {% endfor %}
-  {% endif %}
+    {% if collection.label != 'post' %}
+      <p>{{collection.label}}, {{collection.currentversion}}</p>
+      {% assign name = collection.label %}
+      {% for page in site[name] %}
+        <p>{{ page.codeversion }}</p>
+        {% if page.codeversion == collection.currentversion %}
+          <article>
+            <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 </div>

@@ -1,3 +1,8 @@
+---
+layout: documentation
+codeversion: v1.0.1
+---
+
 ## Usage
 
 A wrapper for a database command, attached to a [[WL_SObjectRecord]]. Implements Comparable interface to allow for the sorting of List\<WL_SObjectOrder\>.

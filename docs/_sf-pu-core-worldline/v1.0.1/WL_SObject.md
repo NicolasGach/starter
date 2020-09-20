@@ -1,3 +1,8 @@
+---
+layout: documentation
+codeversion: v1.0.1
+---
+
 ## Usage
 
 Wrapper for an SObject definition, used to cache SObject definition information and to perform a couple additional operations.

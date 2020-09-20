@@ -1,6 +1,7 @@
 ---
 layout: default
 codeversion: v1.0.1
+permalink: /sf-pu-core-worldline/v1.0.1/
 ---
 # Core Worldline Package
 
